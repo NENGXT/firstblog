@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on AXITEE</title>
+    <link>//localhost:1313/about/</link>
+    <description>Recent content in Abouts on AXITEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>axitee@outlook.com (AXITEE)</managingEditor>
+    <webMaster>axitee@outlook.com (AXITEE)</webMaster>
+    <copyright>© 2024 AXITEE</copyright>
+    <atom:link href="//localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ABOUT</title>
+      <link>//localhost:1313/about/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>axitee@outlook.com (AXITEE)</author>
+      <guid>//localhost:1313/about/about/</guid>
+      <description>This is my first post on my site</description>
+      
+    </item>
+    
+  </channel>
+</rss>
