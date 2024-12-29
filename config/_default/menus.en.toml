@@ -13,18 +13,24 @@
 [[main]]
  name = "ABOUT"
  pageRef = "about"
- weight = 10
+ weight = 1
+
+[[main]]
+ name = "CASES"
+ pageRef = "cases"
+ weight = 2
 
 [[main]]
  name = "MUSIC"
- pageRef = "music"
- weight = 20
+ parent = "CASES"#父级菜单
+ pageRef = "MUSIC"
+ weight = 10
 
-#[[main]]
-#  name = "example sub-menu 1"
-#  parent = "Parent"
-#  pageRef = "posts"
-#  weight = 20
+ [[main]]
+ name = "CODE"
+ parent = "CASES"
+ pageRef = "CODE"
+ weight = 20
 
 #[[main]]
 #  name = "example sub-menu 2"
@@ -37,7 +43,7 @@
 #  pageRef = "tags/interesting-topic"
 #  weight = 10
 
-#[[subnavigation]]
+# [[subnavigation]]
 #  name = "My Awesome Category"
 #  pre = "github"
 #  pageRef = "categories/awesome"

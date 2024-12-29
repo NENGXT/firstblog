@@ -9,7 +9,7 @@ title = "AXITEE"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  logo = "img/blowfish_logo_transparent.png"
+  logo = ""
   # secondaryLogo = "img/secondary-logo.png"
   # description = "My awesome website"
   # copyright = "Copy, _right?_ :thinking_face:"
@@ -23,7 +23,7 @@ title = "AXITEE"
   bio = "I AM AXITEE"
   links = [
     { email = "axitee@outlook.com" },
-    { music = "https://music.163.com/playlist?id=699742510&userid=55584858" },
+    { wangyiyun = "https://music.163.com/playlist?id=699742510&userid=55584858" },
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
