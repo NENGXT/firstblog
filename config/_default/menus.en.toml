@@ -32,6 +32,10 @@
  pageRef = "CODE"
  weight = 20
 
+[[main]]
+ name = "NENGBOT"
+ pageRef = "chatgpt"
+ weight = 3
 #[[main]]
 #  name = "example sub-menu 2"
 #  parent = "Parent"
