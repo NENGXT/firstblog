@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const messagesContainer = document.getElementById('messages');
     const messageInput = document.getElementById('message-input');
     const sendButton = document.getElementById('send-button');
+    const userName = "我"; // 用户称呼
+    const botName = "NengBot："; // 机器人
   
     sendButton.addEventListener('click', sendMessage);
     messageInput.addEventListener('keypress', function (e) {
@@ -13,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function sendMessage() {
       const message = messageInput.value.trim();
       if (message) {
-        addMessage('user', message);
+        addMessage('user', `${userName}: ${message}`);
         messageInput.value = '';
   
         console.log('Sending message:', message);
@@ -30,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
           .then(data => {
             console.log('Received response:', data);
             if (data.choices && data.choices.length > 0) {
-              addMessage('bot', data.choices[0].message.content);
+              addMessage('bot', botName+data.choices[0].message.content);
             } else {
               addMessage('bot', '抱歉，未收到有效回复。');
             }
