@@ -5,7 +5,6 @@ showHero: true
 heroStyle: background
 showReadingTime: false
 ---
-
 熊通，来自中国的音乐制作人。日本音乐制作公司agehasprings签约制作人。
 
 他的音乐创作深受Funk/House/RnB/Jazz等风格的影响，作品在保持着潮流音乐具有的律动感同时，多以抓耳的和声细节以及梦幻的氛围为主。

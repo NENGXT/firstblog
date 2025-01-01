@@ -162,7 +162,12 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 min-h-[130px] opacity-65 pl-[24px] pr-[24px] bg-gradient-to-b from-neutral from-60% dark:from-neutral-800 to-transparent mix-blend-normal" style="z-index:80"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
     
     <div class="flex flex-1 items-center justify-between">
@@ -485,6 +490,16 @@
 
 
 
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
   
   <div class="relative flex flex-col grow">
     <main id="main-content" class="grow">
@@ -621,11 +636,22 @@
           <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     
-<div id="chat-container" style="width: 780px; margin: 0 auto; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-  <div id="messages" style="width: 100%; height: 300px; overflow-y: auto; border: 0px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 3px; background-color: transparent;"></div>
-  <input type="text" id="message-input" placeholder="输入消息..." style="width: 80%; padding: 10px; border: 1px solid #ccc; border-radius: 10px; margin-right: 10px; background-color: transparent;" />
+  <div id="messages" style="width: 400px; height: 300px; overflow-y: auto; border: none; mix-blend-mode: screen; padding: 10px; margin-bottom: 10px;  border-radius: 3px; background-color: transparent;"></div>
+  
+  </span>
+</span>
+
+  <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px;">
+  <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    
+  <input type="text" id="message-input" placeholder="给NENGBOT发送消息..." style="width: 300px; padding: 6px; border: none; border-radius: 10px;  background-color: transparent; margin-right: 8px; box-shadow: none;" />
+  
+  </span>
+</span>
+
   <a
-  class="!rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
+  class="!rounded-md bg-primary-600 px-4 py-1.5 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
   href="#button"
   target="send-button"
   
@@ -636,12 +662,42 @@
   
 </a>
 
-</div>
+  </div>
+<script src="/js/chatgpt.js"></script>
+<!-- <div class="flex flex-row flex-wrap items-center space-x-2">
 
+<div class="flex mt-2">
+<span
+  class="rounded-full bg-primary-500 dark:bg-primary-400 text-neutral-50 dark:text-neutral-800 px-1.5 py-[1px] text-xs font-normal"
+>
+  <span class="flex flex-row items-center">
+    
+    <span>Lorem ipsum dolor.</span>
   </span>
 </span>
+</div>
 
-<script src="/js/chatgpt.js"></script>
+<div class="flex mt-2">
+<span
+  class="rounded-full bg-primary-500 dark:bg-primary-400 text-neutral-50 dark:text-neutral-800 px-1.5 py-[1px] text-xs font-normal"
+>
+  <span class="flex flex-row items-center">
+    
+    <span class="mr-1">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+<path fill="currentColor"  d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+  </span>
+
+</span>
+    
+    <span><strong>Important</strong> skill</span>
+  </span>
+</span>
+</div>
+</div>
+ -->
           
           
           
